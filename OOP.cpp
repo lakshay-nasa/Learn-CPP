@@ -12,3 +12,21 @@
 
 */
 
+#include <iostream>
+using namespace std;
+
+class Person {
+        public:
+        
+        string name;
+        string status;
+};
+
+int main(){
+        Person p1;
+        p1.name = "Lakshay";
+        p1.status = "online";
+
+        cout << p1.name << " " << p1.status;
+        return 0;
+}
