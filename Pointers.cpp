@@ -35,8 +35,8 @@ int main()
     ptr2 = &ptr;
 
     cout << "The value of ptr2 is " << ptr2 << endl;
-    cout << "The value at ptr2 is " << *ptr2 << endl;
-    cout << "The value at address " << ptr << **ptr2 << endl;
+    cout << "The address(value) at ptr is " << *ptr2 << endl;
+    cout << "The value at address " << ptr << " is " << **ptr2 << endl;
 
 
 
