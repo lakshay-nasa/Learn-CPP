@@ -1,4 +1,4 @@
-// Pointers ---> Symbolic representation of addresses. The pointer in C++ language is a variable, it is also known as locator or indicator that points to an address of a value.
+// Pointers ---> Symbolic representation of addresses. A pointer however, is a variable that stores the memory address as its value. The pointer in C++ language is a variable, it is also known as locator or indicator that points to an address of a value.
 
 
 // Difference b/w Pointer(*) and Reference(&) 
@@ -13,7 +13,8 @@ int main()
 {
 
     string modelNo = "A922";    // We can also use int* for int values. ---> A pointer variable points to a data type (like int or string) of the same type, and is created with the * operator.
-    string *ptr = &modelNo;     // It stores the address of modelNo; & ---> address  *---> Derefrence operator
+    string *ptr = &modelNo;     // It stores the address of modelNo; 
+    // & ---> address  *---> Derefrence operator ( Accessing the value of the variable that the pointer points to )
 
     // string* ptr;
     // ptr = &modelNo;
@@ -25,7 +26,7 @@ int main()
     cout << "The address of modelNo is " << ptr << endl; // It prints the address of modelNo 
 
     // Derefrence Operator
-    cout << "The value at address " << ptr << " is " << *ptr << endl;
+    cout << "The value at address " << ptr << " is " << *ptr << "   "<< &ptr <<  endl;
     cout << endl;
 
 
@@ -34,9 +35,9 @@ int main()
     string** ptr2;
     ptr2 = &ptr;
 
-    cout << "The value of ptr2 is " << ptr2 << endl;
-    cout << "The address(value) at ptr is " << *ptr2 << endl;
-    cout << "The value at address " << ptr << " is " << **ptr2 << endl;
+    cout << "The value of ptr2 is " << ptr2 << endl;  // Output ---> ptr address (&ptr)
+    cout << "The address(value) at ptr is " << *ptr2 << endl;   // Output ---> modelNo address (&modelNo)
+    cout << "The value at address " << ptr << " is " << **ptr2 << endl; // Output ---> value at ptr (A922)
 
 
 
