@@ -24,8 +24,9 @@ int main()
     cout << "The address of modelNo is " << ptr << endl; // It prints the address of modelNo
 
     // Derefrence Operator
-    cout << "The value at address " << ptr << " is " << *ptr << "   " << &ptr << endl;
+    cout << "The value at address " << ptr << " is " << *ptr << endl;
     cout << endl;
+
 
     // Double Pointer or Pointer to Pointer
 
